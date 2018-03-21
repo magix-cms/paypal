@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- /*
+ * MAGIX CMS Copyright (c) 2008 - 2018 Gerits Aurelien,
+ * http://www.magix-cms.com
+ * Dual licensed under the MIT AND GPL Version 3 licenses.
+ *
+ * Date: May 22 16:15 2017
+ */-->
+<config>
+	<authorized>
+		<allow_access>*</allow_access>
+	</authorized>
+	<data>
+		<authors>
+			<author>
+				<name>Gerits Aurelien</name>
+				<website href="http://www.magix-cms.com" />
+			</author>
+		</authors>
+		<release>
+			<date_create>21/03/2018</date_create>
+			<date_update>21/03/2018</date_update>
+			<version>1.0</version>
+			<phase>Beta</phase>
+		</release>
+		<support>
+			<ticket href="https://github.com/magix-cms/paypal/issues" />
+			<git href="https://github.com/magix-cms/paypal" />
+		</support>
+	</data>
+</config>
