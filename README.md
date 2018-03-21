@@ -4,7 +4,7 @@ Plugin Paypal for [magixcms](http://www.magix-cms.com) 3
 
 ![pp_acceptance_marks_for_logocenter_266x142](https://user-images.githubusercontent.com/356674/37707695-5716c8d6-2d04-11e8-9d2a-43a72a1d5e29.png)
 
-###version 
+### version 
 
 [![release](https://img.shields.io/github/release/magix-cms/paypal.svg)](https://github.com/magix-cms/paypal/releases/latest)
 
@@ -26,3 +26,6 @@ Ce plugin est dédié a Magix CMS et travail avec paypal.
  Requirements
    ------------
    * CURL (http://php.net/manual/en/book.curl.php)
+   
+## Aperçu
+![screenshot-2018-3-21 paypal magix cms admin](https://user-images.githubusercontent.com/356674/37717439-daae761e-2d20-11e8-88d4-3d63d843e486.png)
