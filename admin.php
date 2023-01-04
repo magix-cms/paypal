@@ -109,6 +109,8 @@ class plugins_paypal_admin extends plugins_paypal_db
         $setData = $this->getItems('root',NULL,'one',false);
         if($setData['id_paypal']){
 
+            $log = !isset($this->log) ? 0 : 1;
+
             $this->upd(
                 array(
                     'type' => 'config',
@@ -116,12 +118,14 @@ class plugins_paypal_admin extends plugins_paypal_db
                         'clientId'      =>  $this->clientId,
                         'clientSecret'  =>  $this->clientSecret,
                         'mode'          =>  $this->mode,
-                        'log'           =>  $this->log,
+                        'log'           =>  $log,
                         'id'            =>  $setData['id_paypal']
                     )
                 )
             );
         }else{
+            $log = !isset($this->log) ? 0 : 1;
+
             $this->add(
                 array(
                     'type' => 'newConfig',
@@ -129,7 +133,7 @@ class plugins_paypal_admin extends plugins_paypal_db
                         'clientId'      =>  $this->clientId,
                         'clientSecret'  =>  $this->clientSecret,
                         'mode'          =>  $this->mode,
-                        'log'           =>  $this->log
+                        'log'           =>  $log
                     )
                 )
             );

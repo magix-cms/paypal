@@ -19,10 +19,15 @@
 		</authors>
 		<release>
 			<date_create>21/03/2018</date_create>
-			<date_update>21/03/2018</date_update>
-			<version>1.0</version>
-			<phase>Beta</phase>
+			<date_update>04/01/2023</date_update>
+			<version>2.0</version>
+			<phase>Stable</phase>
 		</release>
+		<bind>
+			<plugin>
+				<name>cartpay</name>
+			</plugin>
+		</bind>
 		<support>
 			<ticket href="https://github.com/magix-cms/paypal/issues" />
 			<git href="https://github.com/magix-cms/paypal" />

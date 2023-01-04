@@ -26,6 +26,12 @@ class plugins_paypal_db
                     case 'root':
                         $sql = 'SELECT * FROM mc_paypal ORDER BY id_paypal DESC LIMIT 0,1';
                         break;
+                    case 'history':
+                        $sql = 'SELECT * FROM mc_paypal_history WHERE order_h = :order_h';
+                        break;
+                    case 'lastHistory':
+                        $sql = 'SELECT * FROM mc_paypal_history ORDER BY id_paypal_h DESC LIMIT 0,1';
+                        break;
                 }
 
                 return $sql ? component_routing_db::layer()->fetch($sql, $params) : null;
@@ -47,6 +53,10 @@ class plugins_paypal_db
 
                     $sql = 'INSERT INTO mc_paypal (clientId,clientSecret,mode,log)
 		            VALUE(:clientId,:clientSecret,:mode,:log)';
+
+                    break;
+                case 'history':
+                    $sql = 'INSERT INTO mc_paypal_history (order_h,status_h) VALUE(:order_h,:status_h)';
 
                     break;
             }
